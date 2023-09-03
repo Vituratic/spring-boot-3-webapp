@@ -6,6 +6,10 @@
 <body>
     <h1>Welcome to Spring Blog</h1>
 
+    <div>
+        <a href="/posts/add">Write new Blog Post</a>
+    </div>
+
     <div th:each="post : ${posts}">
         <h3 th:text="${post.title}"></h3>
         <h6 th:text="${post.description}"></h6>
